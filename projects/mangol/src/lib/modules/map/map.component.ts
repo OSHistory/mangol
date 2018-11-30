@@ -97,7 +97,6 @@ export class MapComponent implements OnInit, AfterViewInit, OnDestroy {
           new MapActions.SetMap(
             new Map({
               target: this.target,
-              renderer: this.defaultMap.renderer,
               view: view !== null ? view : this.defaultMap.view,
               layers: []
             })

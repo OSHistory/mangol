@@ -6,7 +6,7 @@ export interface MeasureMode {
   type: string;
   fontIcon: string;
   fontSet: string;
-  geometryName: GeometryType;
+  geometryName: string;
 }
 
 export interface MeasureDictionary {

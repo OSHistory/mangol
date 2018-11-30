@@ -169,8 +169,7 @@ export class MeasureResultsComponent implements OnInit, OnDestroy {
         this.displayValue = displayValue;
       });
     });
-
-    this.draw.on('drawend', (e: Draw.Event) => {
+    this.draw.on('drawend', (e: any) => {
       e.feature.setProperties({ text: this.displayValue });
       this.store.dispatch(
         new CursorActions.SetMode({
